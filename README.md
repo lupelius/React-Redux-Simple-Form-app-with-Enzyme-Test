@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is made with React and Redux unit tested with with Enzyme Tests and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Components are structured into atoms, molecules and organisms, answers to all questions are kept in redux store and question structure comes from a json file (which can be moved to api side to be served as json)
 
 ## Available Scripts
 
