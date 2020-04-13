@@ -1,0 +1,45 @@
+[{
+  "name": "question1",
+  "type": "text",
+  "question": "What is your first name?",
+  "validation": [{
+    "regexp": "^[a-zA-Z ]+$",
+    "msg": "Only letters and spaces are allowed"
+  }]
+},
+{
+  "name": "question2",
+  "type": "number",
+  "question": "How old are you?",
+  "validation": [{
+    "regexp": "^[0-9]*$",
+    "msg": "Only numbers are allowed"
+  }],
+  "comparisonValidation": [{
+    "filterParameter": "18",
+    "filterCondition": ">=",
+    "msg": "You need to be 18 or older"
+  }, {
+    "filterParameter": "65",
+    "filterCondition": "<",
+    "msg": "You need to be 64 or younger"
+  }]
+},
+{
+  "name": "question3",
+  "type": "select",
+  "question": "Do you have a significant other?"
+},
+{
+  "name": "question4",
+  "type": "text",
+  "question": "What is your significant other's name?",
+  "validation": [{
+    "regexp": "^[a-zA-Z ]+$",
+    "msg": "Only letters and spaces are allowed"
+  }],
+  "dependsOn": [{
+    "key": 2,
+    "expectedValue": "true"
+  }]
+}]

@@ -1,0 +1,28 @@
+.question {
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+    width: 320px;
+    -moz-box-shadow:    3px 3px 15px 1px #fffff7;
+    -webkit-box-shadow: 3px 3px 15px 1px #fffff7;
+    box-shadow:         3px 3px 15px 1px #fffff7;
+    .err {
+      color: red;
+      font-size: 14px;
+    }
+    * {
+      width: 93%;
+      margin: 5px;
+    }
+}
+}
