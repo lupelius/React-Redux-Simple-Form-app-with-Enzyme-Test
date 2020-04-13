@@ -2,6 +2,36 @@ This project is made with React and Redux unit tested with with Enzyme Tests and
 
 Components are structured into atoms, molecules and organisms, answers to all questions are kept in redux store and question structure comes from a json file (which can be moved to api side to be served as json)
 
+## Task: 
+Write a simple React component that can render a series of questions and responses
+from text inputs, number inputs and dropdowns depending on the props provided, as well as a
+“Done” button once all questions are complete.
+● This should be a custom component that doesn’t use an HTML <form>
+● Don’t use any external form library.
+● Please use web React to render your component, rather than React Native.
+You should make clear the structure of the props your component expects. In particular, we
+would expect to be able to configure via props:
+● The questions asked, the data type / validation of any answers
+● The existing user data at the start of the conversation
+● The conditions under which to ask a particular question
+You can use the following as your test case:
+● What is your first name?
+○ Expects a string
+● How old are you?
+○ Expects a number
+○ Should be >= 18 and < 65 years old
+● Do you have a significant other?
+○ Expects True / False
+● What is your significant other’s name?
+○ Expects a string
+○ Only asked if the answer to the previous question is true
+
+Questions should appear one by one, in sequence. A question should appear once the answer to
+the previous question is complete and valid, triggered by onBlur. Once a field has been touched,
+it should be highlighted if it is invalid - how you show this is up to you.
+The “Done” button should appear when the conversation is otherwise complete, and on press
+should show a simple success message.
+
 ## Available Scripts
 
 In the project directory, you can run:
