@@ -6,7 +6,7 @@ const Header = (props) => {
     <header data-test="header">
       <div className="wrapper">
         <div className="logo">
-           <h1><span>React Redux Simple Form app with Enzyme</span></h1>
+           <h1 data-test="logo-svg"><span>React Redux Simple Form app with Enzyme</span></h1>
         </div>
       </div>
     </header>
